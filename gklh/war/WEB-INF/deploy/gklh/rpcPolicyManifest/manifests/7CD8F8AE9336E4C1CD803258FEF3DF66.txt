@@ -1,0 +1,2 @@
+serviceClass: lhjg.client.EasyGraderService
+path: 13CE3F3CBBD9FF79092A1FE8A0EF7529.gwt.rpc
