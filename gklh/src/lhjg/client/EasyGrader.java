@@ -97,6 +97,19 @@ public class EasyGrader implements EntryPoint {
 		
 		
 	}
+	public void handleDeleteRequest(Form form) {
+		EasyGraderService.deleteFormFromDB(form, 
+				new AsyncCallback<String>() {
+			public void onFailure(Throwable caught) {
+				System.out.println("Failed to delete form from Server");  
+			}
+			public void onSuccess(String data) {
+				System.out.println("successfully deleted form");
+			}
+		});
+	}
+	
+	
 	public void getFormsFromServer() {
 		EasyGraderService.getFormsFromServer(new AsyncCallback<List<Form>>(){
 

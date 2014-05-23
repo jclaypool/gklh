@@ -26,9 +26,12 @@
 	<url-pattern>/gklh/loginservice</url-pattern>
   </servlet-mapping>
   
+  
+  
+  
   <!-- Default page to serve -->
   <welcome-file-list>
-    <welcome-file>Gklh.html</welcome-file>
+    <welcome-file>Welcome.html</welcome-file>
   </welcome-file-list>
 
 </web-app>

@@ -41,5 +41,11 @@ public class EasyGraderServiceImpl extends RemoteServiceServlet implements
 		return new Boolean(user!=null);
 	}
 
+	@Override
+	public String deleteFormFromDB(Form form) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 }

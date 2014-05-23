@@ -20,14 +20,21 @@ public class Form implements Serializable{
 	@Persistent(valueStrategy=IdGeneratorStrategy.IDENTITY)
 	@Extension(vendorName = "datanucleus", key = "gae.encoded-pk", value = "true")
 	private String id;
-	@Persistent
+	
 	private java.util.List<Category> categories = new ArrayList<Category>();
+	
 	@Persistent
 	private boolean isFilledOut = false;
 	@Persistent
 	private String person = "nobody";
 	@Persistent
 	private String title = "no title";
+	
+	
+	@Persistent
+	private List<Category> flatList = new ArrayList<Category>();
+	
+	
 
 	public Form() {}
 
@@ -91,6 +98,11 @@ public class Form implements Serializable{
 		f.setCategories(categories);
 		f.print();
 
+	}
+
+	public void flatten() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -22,12 +22,15 @@ public class Category implements Serializable {
 	
 	@Persistent
 	private String title = "no title";
-	@Persistent
-	
+
+
 	/*private CategoryGradeType type;
 	@Persistent
 	@Unowned*/
 	private List<Category> subcategories = new ArrayList<Category>();
+	
+	
+
 	
 	public Category() {}
 

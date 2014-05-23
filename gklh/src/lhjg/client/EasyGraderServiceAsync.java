@@ -13,5 +13,6 @@ public interface EasyGraderServiceAsync {
 	void getLogOutUrl(AsyncCallback<String> callback);
 	void isUserLoggedIn(AsyncCallback<Boolean> callback);
 	void setAppBaseURL(String homeURL, AsyncCallback<String> callback);
+	void deleteFormFromDB(Form form, AsyncCallback<String> callback);
 
 }

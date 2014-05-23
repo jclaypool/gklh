@@ -49,8 +49,21 @@ public class EasyGraderView {
 		vPanel.add(submitFormButton);
 		
 		Button getFormsFromServer = new Button();
-		getFormsFromServer.setText("Get forms from server");
+		getFormsFromServer.setText("Get form from server");
 		vPanel.add(getFormsFromServer);
+		
+		Button deleteFormFromServer = new Button();
+		deleteFormFromServer.setText("delete form from server");
+		vPanel.add(deleteFormFromServer);
+		
+		submitFormButton.addClickHandler(new ClickHandler(){
+			@Override
+			public void onClick(ClickEvent event) {
+				control.handleDeleteRequest(f);
+				
+			}
+			
+		});
 		
 		submitFormButton.addClickHandler(new ClickHandler(){
 		

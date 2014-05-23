@@ -14,4 +14,5 @@ public interface EasyGraderService extends RemoteService {
 	public Boolean isUserLoggedIn();
 	public String getLogOutUrl();
 	public String setAppBaseURL(String homeURL);
+	public String deleteFormFromDB(Form form); 
 }
